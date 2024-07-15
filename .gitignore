@@ -57,3 +57,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# SEO files
+public/robots.txt
+public/sitemap*
