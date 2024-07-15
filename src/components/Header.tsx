@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Logo from "./Logo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 const MobileCloseButton = () => {
@@ -40,15 +40,34 @@ const MobileOpenButton = () => {
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    const clickOffMenuEvent = (e: MouseEvent) => {
+      if (e.target !== document.getElementById("mobile-menu")) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("click", clickOffMenuEvent);
+    }
+
+    return () => {
+      document.removeEventListener("click", clickOffMenuEvent);
+    };
+  }, [isOpen, setIsOpen]);
+
   return (
     <>
-      <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <div className="sm:hidden" onClick={() => setIsOpen(!isOpen)}>
         {!isOpen && <MobileOpenButton />}
         {isOpen && <MobileCloseButton />}
       </div>
       {isOpen &&
         createPortal(
-          <div className="absolute top-20 right-4 bg-dark p-6 border boder-color-white rounded flex flex-col gap-4 text-right">
+          <div
+            id="mobile-menu"
+            className="absolute top-20 right-4 bg-dark p-6 border boder-color-white rounded flex flex-col gap-4 text-right"
+          >
             <Link className="text-white" href="/services">
               Services
             </Link>
@@ -64,7 +83,7 @@ const MobileMenu = () => {
 
 const MainMenu = () => {
   return (
-    <div className="hidden lg:flex gap-4">
+    <div className="hidden sm:flex gap-4">
       <Link className="text-white" href="/services">
         Services
       </Link>

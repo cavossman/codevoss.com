@@ -15,9 +15,11 @@ const Footer = () => {
             </div>
           </ContactModal>
         </div>
-        <ul>
-          <li className="font-bold mb-2 bg-gradient-to-r pb-2 from-primary-dark via-white to-secondary">
-            <span className="bg-dark pt-1 pb-2 mb">Navigation</span>
+        <ul className="text-right">
+          <li>
+            <span className="font-bold pt-1 pb-2 mb text-secondary">
+              Navigation
+            </span>
           </li>
           <li className="text-sm py-1">
             <Link href="/services">Services</Link>
