@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark:bg-dark dark:text-white min-h-screen ${inter.className}`}
+        className={`bg-light dark:bg-dark dark:text-white min-h-screen ${inter.className}`}
       >
         <Header />
         <main>{children}</main>

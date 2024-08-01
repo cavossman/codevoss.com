@@ -1,10 +1,23 @@
 import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
+import StackLogo from "@/components/StackLogo";
 import { Metadata } from "next/types";
+import { FC } from "react";
 
 export const metadata: Metadata = {
   title: "Services Offered | CodeVoss",
   description: "CodeVoss specializes in PHP, TypeScript, Laravel, React, Next.",
+};
+
+const LogoGroup: FC<{ logos: string[] }> = ({ logos }) => {
+  return (
+    <span className="flex gap-8 mt-4 items-center">
+      {logos.map((logo) => {
+        const [file, ext] = logo.split(".");
+        return <StackLogo logo={file} ext={ext ?? "svg"} />;
+      })}
+    </span>
+  );
 };
 
 const ServicesPage = () => {
@@ -14,24 +27,61 @@ const ServicesPage = () => {
       <section className="container" style={{ maxWidth: "70ch" }}>
         <h2 className="text-secondary">Ecommerce Websites</h2>
         <p>
-          Transform your business with our customized ecommerce solutions. We
-          specialize in designing and developing robust ecommerce websites that
-          enhance user experience and drive conversions.
+          We specialize in designing and developing robust eCommerce websites
+          using WordPress and Shopify, tailored to meet your unique business
+          needs. Our solutions are crafted to enhance user experience,
+          streamline navigation, and drive conversions. Whether you're looking
+          for the flexibility of WordPress with WooCommerce or the streamlined
+          functionality of Shopify, we build platforms that engage customers and
+          support your sales objectives.
+        </p>
+        <p>
+          Our expertise ensures that your eCommerce site not only looks
+          impressive but also performs flawlessly. By leveraging the strengths
+          of WordPress and Shopify, we deliver customized, user-friendly, and
+          efficient online stores that transform your business and boost your
+          success in the digital marketplace.
+          <LogoGroup logos={["wordpress", "shopify"]} />
         </p>
 
         <h2 className="text-secondary">API Development</h2>
         <p>
-          Unlock the full potential of your applications with our API
-          development services. We create secure and scalable APIs that
-          integrate seamlessly with your systems, enabling efficient data
-          exchange and functionality.
+          We harness the power of Laravel to create secure, scalable APIs that
+          integrate seamlessly with your systems. Laravel’s robust PHP framework
+          enables us to build APIs that are both flexible and reliable, ensuring
+          efficient data exchange and enhanced functionality for your
+          applications.
+        </p>
+        <p>
+          Our API development services are designed to maximize your
+          applications' capabilities and streamline your operations. By
+          leveraging Laravel's advanced features, we deliver solutions that meet
+          your specific needs, drive performance, and facilitate smooth
+          integration, helping you unlock your applications' full potential and
+          achieve your business goals.
+          <LogoGroup logos={["laravel", "mysql"]} />
         </p>
 
         <h2 className="text-secondary">Infrastructure Management</h2>
         <p>
-          Ensure the reliability and performance of your IT infrastructure with
-          our management services. From cloud solutions to on-premises setups,
-          we optimize your infrastructure for maximum efficiency and uptime.
+          We leverage Amazon Web Services (AWS) and Terraform to enhance the
+          reliability, performance, and efficiency of your IT infrastructure.
+          AWS provides scalable, secure, and highly available cloud services,
+          allowing us to design and manage your infrastructure for optimal
+          performance and cost-efficiency. With AWS’s global network and
+          security features, we ensure your applications remain accessible and
+          protected.
+        </p>
+        <p>
+          Using Terraform, we manage your infrastructure as code, enabling
+          consistent and repeatable deployments while reducing manual errors.
+          This automation facilitates rapid provisioning, efficient resource
+          management, and effective cost control. Our approach involves
+          assessing your needs, implementing tailored solutions, and
+          continuously monitoring and optimizing your setup to ensure it meets
+          your business goals. Trust us to deliver a cloud infrastructure that
+          maximizes efficiency and uptime while adapting to your evolving needs.
+          <LogoGroup logos={["aws.png", "terraform", "docker"]} />
         </p>
 
         <h2 className="text-secondary">Automation</h2>

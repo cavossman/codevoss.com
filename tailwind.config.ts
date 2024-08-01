@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        light: '#f3f3f3',
         dark: '#202124',
+        // replace with shades of colors.
+        'dark-light' : '#292a2b',
         // chiefs
         red: '#E31837',
         gold: '#FFB81C',
