@@ -112,9 +112,9 @@ const ContactModal: React.FC<{ children: ReactNode }> = ({ children }) => {
           </button>
         </form>
       </Modal>
-      <div className="cursor-pointer" onClick={openModal}>
+      <span className="contact-modal cursor-pointer" onClick={openModal}>
         {children}
-      </div>
+      </span>
     </>
   );
 };

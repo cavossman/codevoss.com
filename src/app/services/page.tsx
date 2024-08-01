@@ -1,3 +1,4 @@
+import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
 
@@ -42,9 +43,9 @@ const ServicesPage = () => {
 
         <h2 className="text-secondary">Custom Solutions</h2>
         <p>
-          Have a unique challenge? We thrive on solving complex problems.
-          Contact us today to discuss how we can tailor our services to meet
-          your specific needs.
+          Have a unique challenge? We thrive on solving complex problems.{" "}
+          <ContactModal>Contact us</ContactModal> today to discuss how we can
+          tailor our services to meet your specific needs.
         </p>
       </section>
     </>

@@ -1,3 +1,4 @@
+import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
 
@@ -89,7 +90,7 @@ const AboutPage = () => {
         <p>
           <strong className="text-secondary">Get in Touch:</strong> Ready to
           take your business to the next level?{" "}
-          <a href="contact.html">Contact us</a> today to discuss how we can
+          <ContactModal>Contact us</ContactModal> today to discuss how we can
           collaborate and turn your ideas into reality.
         </p>
       </section>

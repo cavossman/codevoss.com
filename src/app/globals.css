@@ -25,10 +25,29 @@
 
     p {
         @apply mb-4 leading-loose;
+
+        + h2 {
+            @apply mt-8;
+        }
+    }
+
+    li, ul {
+        + h2 {
+            @apply mt-8;
+        }
     }
 
     section {
         @apply pt-4;
         @apply pb-[9rem];
+    }
+
+    a {
+        @apply text-primary-dark dark:text-inherit hover:text-primary;
+    }
+
+    p .contact-modal,
+    p a {
+        @apply underline underline-offset-4 hover:text-primary;
     }
 }
