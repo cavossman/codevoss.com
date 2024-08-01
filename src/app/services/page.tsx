@@ -14,7 +14,7 @@ const LogoGroup: FC<{ logos: string[] }> = ({ logos }) => {
     <span className="flex gap-8 mt-4 items-center">
       {logos.map((logo) => {
         const [file, ext] = logo.split(".");
-        return <StackLogo logo={file} ext={ext ?? "svg"} />;
+        return <StackLogo key={logo} logo={file} ext={ext ?? "svg"} />;
       })}
     </span>
   );
@@ -30,10 +30,10 @@ const ServicesPage = () => {
           We specialize in designing and developing robust eCommerce websites
           using WordPress and Shopify, tailored to meet your unique business
           needs. Our solutions are crafted to enhance user experience,
-          streamline navigation, and drive conversions. Whether you're looking
-          for the flexibility of WordPress with WooCommerce or the streamlined
-          functionality of Shopify, we build platforms that engage customers and
-          support your sales objectives.
+          streamline navigation, and drive conversions. Whether you&apos;re
+          looking for the flexibility of WordPress with WooCommerce or the
+          streamlined functionality of Shopify, we build platforms that engage
+          customers and support your sales objectives.
         </p>
         <p>
           Our expertise ensures that your eCommerce site not only looks
@@ -47,18 +47,18 @@ const ServicesPage = () => {
         <h2 className="text-secondary">API Development</h2>
         <p>
           We harness the power of Laravel to create secure, scalable APIs that
-          integrate seamlessly with your systems. Laravel’s robust PHP framework
-          enables us to build APIs that are both flexible and reliable, ensuring
-          efficient data exchange and enhanced functionality for your
-          applications.
+          integrate seamlessly with your systems. Laravel&apos;s robust PHP
+          framework enables us to build APIs that are both flexible and
+          reliable, ensuring efficient data exchange and enhanced functionality
+          for your applications.
         </p>
         <p>
           Our API development services are designed to maximize your
-          applications' capabilities and streamline your operations. By
-          leveraging Laravel's advanced features, we deliver solutions that meet
-          your specific needs, drive performance, and facilitate smooth
-          integration, helping you unlock your applications' full potential and
-          achieve your business goals.
+          applications&apos; capabilities and streamline your operations. By
+          leveraging Laravel&apos;s advanced features, we deliver solutions that
+          meet your specific needs, drive performance, and facilitate smooth
+          integration, helping you unlock your applications&apos; full potential
+          and achieve your business goals.
           <LogoGroup logos={["laravel", "mysql"]} />
         </p>
 

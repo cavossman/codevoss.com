@@ -188,8 +188,8 @@ const HomePage = () => {
             </h3>
             <p>
               Receive tailored solutions that align with your unique business
-              needs, whether it's developing secure APIs, automating processes,
-              or creating high-performance eCommerce sites.
+              needs, whether it&apos;s developing secure APIs, automating
+              processes, or creating high-performance eCommerce sites.
             </p>
           </div>
         </div>
