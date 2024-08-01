@@ -53,7 +53,7 @@ const ContactModal: React.FC<{ children: ReactNode }> = ({ children }) => {
           <div className="mb-4">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-white"
+              className="block text-sm font-medium dark:text-white"
             >
               Name
             </label>
@@ -71,7 +71,7 @@ const ContactModal: React.FC<{ children: ReactNode }> = ({ children }) => {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-white"
+              className="block text-sm font-medium dark:text-white"
             >
               Email
             </label>
@@ -89,7 +89,7 @@ const ContactModal: React.FC<{ children: ReactNode }> = ({ children }) => {
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-white"
+              className="block text-sm font-medium dark:text-white"
             >
               Message
             </label>

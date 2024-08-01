@@ -52,22 +52,31 @@ const AboutPage = () => {
         <h2 className="text-secondary">Why Choose Us?</h2>
         <ul className="mb-4">
           <li>
-            <strong className="text-primary">Expertise:</strong> Our team
-            consists of seasoned professionals with a passion for innovation.
+            <strong className="text-primary-dark dark:text-primary">
+              Expertise:
+            </strong>{" "}
+            Our team consists of seasoned professionals with a passion for
+            innovation.
           </li>
           <li>
-            <strong className="text-primary">Client-Centric:</strong> We
-            prioritize understanding your business objectives and delivering
+            <strong className="text-primary-dark dark:text-primary">
+              Client-Centric:
+            </strong>{" "}
+            We prioritize understanding your business objectives and delivering
             measurable results.
           </li>
           <li>
-            <strong className="text-primary">Quality Assurance:</strong>{" "}
+            <strong className="text-primary-dark dark:text-primary">
+              Quality Assurance:
+            </strong>{" "}
             Rigorous testing and QA processes ensure reliable and robust
             solutions.
           </li>
           <li>
-            <strong className="text-primary">Continuous Improvement:</strong> We
-            stay ahead of industry trends to provide cutting-edge solutions.
+            <strong className="text-primary-dark dark:text-primary">
+              Continuous Improvement:
+            </strong>{" "}
+            We stay ahead of industry trends to provide cutting-edge solutions.
           </li>
         </ul>
         <h2 className="text-secondary">Join Us on Our Journey</h2>

@@ -11,14 +11,14 @@ const HomePage = () => {
   return (
     <>
       <PageHeader>
-        <span className="uppercase tracking-wide text-white mb-2 md:mb-5">
+        <span className="uppercase tracking-wide dark:text-white mb-2 md:mb-5">
           From Concept
         </span>
         <span className="uppercase tracking-wide text-secondary mb-1 md:mb-3">
           to Code
         </span>
         <ContactModal>
-          <div className="text-base md:text-lg text-white font-normal border rounded px-2 md:px-3 py-1 md:py-2 mt-3">
+          <div className="text-base md:text-lg dark:text-white font-normal border border-black dark:border-white rounded px-2 md:px-3 py-1 md:py-2 mt-3">
             Get in Touch
           </div>
         </ContactModal>

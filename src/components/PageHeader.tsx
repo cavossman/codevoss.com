@@ -10,7 +10,7 @@ interface Props {
 const PageHeader = ({ children }: Props) => {
   return (
     <div
-      className={`bg-gradient-to-b from-transparent via-primary-dark to-transparent flex justify-center md:max-h-[500px] max-h-[200px] h-screen mb-9 ${orbitron.className} tracking-wide`}
+      className={`bg-gradient-to-b from-transparent via-primary-light dark:via-primary-dark to-transparent flex justify-center md:max-h-[500px] max-h-[200px] h-screen mb-9 ${orbitron.className} tracking-wide`}
     >
       <div className="flex flex-col items-center justify-center text-center font-bold text-3xl md:text-5xl">
         {typeof children === "string" ? (

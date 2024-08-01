@@ -18,6 +18,7 @@ const config: Config = {
         'powder-blue': '#7AB2DD',
         'gold-alt': '#C0995A',
         'primary-dark': '#3a3f6c',
+        'primary-light': '#c6ccff',
         primary: '#9ca5ff',
         secondary: '#fd7d14'
       }
