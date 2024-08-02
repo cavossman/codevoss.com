@@ -1,18 +1,21 @@
+import { IconName } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FC } from "react";
 
-interface Props {
-  logo: string;
-  ext?: string;
-}
+const StackLogo: FC<{
+  logo: IconName | string;
+}> = ({ logo }) => {
+  if (["mysql", "terraform"].includes(logo)) {
+    return (
+      <img
+        className="dark:filter stack-logo w-12"
+        src={`/images/logos/${logo}.svg`}
+        alt={`${logo} logo`}
+      />
+    );
+  }
 
-const StackLogo: FC<Props> = ({ logo, ext = "svg" }) => {
-  return (
-    <img
-      className="dark:filter stack-logo w-12"
-      src={`/images/logos/${logo}.${ext}`}
-      alt={`${logo} logo`}
-    />
-  );
+  return <FontAwesomeIcon className="w-12" icon={["fab", logo as IconName]} />;
 };
 
 export default StackLogo;

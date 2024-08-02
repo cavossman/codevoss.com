@@ -1,6 +1,7 @@
 import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
 import StackLogo from "@/components/StackLogo";
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Metadata } from "next/types";
 import { FC } from "react";
 
@@ -9,12 +10,11 @@ export const metadata: Metadata = {
   description: "CodeVoss specializes in PHP, TypeScript, Laravel, React, Next.",
 };
 
-const LogoGroup: FC<{ logos: string[] }> = ({ logos }) => {
+const LogoGroup: FC<{ logos: (IconName | string)[] }> = ({ logos }) => {
   return (
     <span className="flex gap-8 mt-4 items-center">
       {logos.map((logo) => {
-        const [file, ext] = logo.split(".");
-        return <StackLogo key={logo} logo={file} ext={ext ?? "svg"} />;
+        return <StackLogo key={logo} logo={logo} />;
       })}
     </span>
   );
@@ -41,7 +41,9 @@ const ServicesPage = () => {
           of WordPress and Shopify, we deliver customized, user-friendly, and
           efficient online stores that transform your business and boost your
           success in the digital marketplace.
-          <LogoGroup logos={["wordpress", "shopify"]} />
+          <LogoGroup
+            logos={["wordpress-simple", "shopify", "laravel", "react", "vuejs"]}
+          />
         </p>
 
         <h2 className="text-secondary">API Development</h2>
@@ -59,7 +61,7 @@ const ServicesPage = () => {
           meet your specific needs, drive performance, and facilitate smooth
           integration, helping you unlock your applications&apos; full potential
           and achieve your business goals.
-          <LogoGroup logos={["laravel", "mysql"]} />
+          <LogoGroup logos={["laravel", "mysql", "php"]} />
         </p>
 
         <h2 className="text-secondary">Infrastructure Management</h2>
@@ -81,7 +83,7 @@ const ServicesPage = () => {
           continuously monitoring and optimizing your setup to ensure it meets
           your business goals. Trust us to deliver a cloud infrastructure that
           maximizes efficiency and uptime while adapting to your evolving needs.
-          <LogoGroup logos={["aws.png", "terraform", "docker"]} />
+          <LogoGroup logos={["aws", "terraform", "docker"]} />
         </p>
 
         <h2 className="text-secondary">Automation</h2>
