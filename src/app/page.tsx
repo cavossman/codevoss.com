@@ -32,12 +32,12 @@ const HomePage = () => {
           </div>
         </ContactModal>
       </PageHeader>
-      <section className="container">
-        <h2 className="dark:text-secondary">Our Services</h2>
+      <section className="container content">
+        <h2>Our Services</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="card order-1 flex justify-between items-center">
             <h3 className="mb-0">Websites</h3>
-            <a href="/services" className="btn btn-secondary btn-sm">
+            <a href="/services/websites" className="btn btn-secondary btn-sm">
               Learn More
             </a>
           </div>
@@ -52,7 +52,7 @@ const HomePage = () => {
           </div>
           <div className="card order-3 lg:order-1 flex justify-between items-center">
             <h3 className="mb-0">Software</h3>
-            <a href="/services" className="btn btn-secondary btn-sm">
+            <a href="/services/apis" className="btn btn-secondary btn-sm">
               Learn More
             </a>
           </div>
@@ -98,8 +98,8 @@ const HomePage = () => {
           </div> */}
         </div>
       </section>
-      <section className="container">
-        <h2 className="dark:text-secondary">Why Choose Us for Your Business</h2>
+      <section className="container content">
+        <h2>Why Choose Us for Your Business</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
             <h3 className="flex gap-4 items-center text-secondary justify-between">

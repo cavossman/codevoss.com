@@ -41,9 +41,13 @@ const ServicesPage = () => {
           of WordPress and Shopify, we deliver customized, user-friendly, and
           efficient online stores that transform your business and boost your
           success in the digital marketplace.
-          <LogoGroup
-            logos={["wordpress-simple", "shopify", "laravel", "react", "vuejs"]}
-          />
+          <br />
+          <a
+            href="/services/websites"
+            className="mt-4 btn btn-secondary btn-sm"
+          >
+            Learn More
+          </a>
         </p>
 
         <h2 className="text-secondary">API Development</h2>
@@ -61,7 +65,10 @@ const ServicesPage = () => {
           meet your specific needs, drive performance, and facilitate smooth
           integration, helping you unlock your applications&apos; full potential
           and achieve your business goals.
-          <LogoGroup logos={["laravel", "mysql", "php"]} />
+          <br />
+          <a href="/services/apis" className="mt-4 btn btn-secondary btn-sm">
+            Learn More
+          </a>
         </p>
 
         <h2 className="text-secondary">Infrastructure Management</h2>
@@ -83,7 +90,13 @@ const ServicesPage = () => {
           continuously monitoring and optimizing your setup to ensure it meets
           your business goals. Trust us to deliver a cloud infrastructure that
           maximizes efficiency and uptime while adapting to your evolving needs.
-          <LogoGroup logos={["aws", "terraform", "docker"]} />
+          <br />
+          <a
+            href="/services/infrastructure"
+            className="mt-4 btn btn-secondary btn-sm"
+          >
+            Learn More
+          </a>
         </p>
 
         <h2 className="text-secondary">Automation</h2>

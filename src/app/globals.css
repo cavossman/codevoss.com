@@ -62,7 +62,7 @@
     }
 
     .btn {
-        @apply inline-block px-4 py-3 rounded-lg;
+        @apply inline-block px-4 py-3 rounded-lg no-underline;
     }
 
     .btn-sm {
@@ -71,5 +71,19 @@
 
     .btn-secondary {
         @apply bg-secondary text-white hover:text-black;
+    }
+    
+    .content {
+        h1, h2, h3, h4 {
+            @apply text-secondary;
+        }
+
+        ul li, ol li {
+            @apply mb-3;
+
+            strong {
+                @apply text-primary-dark dark:text-primary;
+            }
+        }
     }
 }
