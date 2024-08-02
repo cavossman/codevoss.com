@@ -4,6 +4,7 @@ import "./globals.css";
 import "../util/fontawesome";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Metadata } from "next/types";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,13 @@ const schema = [
     inLanguage: "en-US",
   },
 ];
+
+export const metadata: Metadata = {
+  metadataBase: new URL(`https://codevoss.com`),
+  alternates: {
+    canonical: "./",
+  },
+};
 
 export default function RootLayout({
   children,
