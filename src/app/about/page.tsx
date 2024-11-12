@@ -13,7 +13,7 @@ const AboutPage = () => {
     <>
       <PageHeader>About</PageHeader>
       <section className="container" style={{ maxWidth: "70ch" }}>
-        <h2 className="text-secondary">Our Founding Story</h2>
+        <h2 className="text-primary">Our Founding Story</h2>
         <p>
           Founded in 2024 by Collin and Jenny Vossman, CodeVoss began with a
           shared passion for technology and a vision to create impactful
@@ -34,7 +34,7 @@ const AboutPage = () => {
           insights and customer-centric approach ensure that CodeVoss not only
           meets but exceeds client expectations.
         </p>
-        <h2 className="text-secondary">What Drives Us</h2>
+        <h2 className="text-primary">What Drives Us</h2>
         <p>
           At CodeVoss, we believe in harnessing the latest technologies to solve
           complex challenges. Whether it&#39;s developing cutting-edge software
@@ -42,7 +42,7 @@ const AboutPage = () => {
           digital experiences, our team is dedicated to delivering solutions
           that exceed expectations.
         </p>
-        <h2 className="text-secondary">Our Approach</h2>
+        <h2 className="text-primary">Our Approach</h2>
         <p>
           We pride ourselves on our collaborative approach and commitment to
           quality. From initial concept to final deployment, we work closely
@@ -50,7 +50,7 @@ const AboutPage = () => {
           tailor-made solutions that drive success. Our agile methodology
           ensures flexibility and efficiency at every stage of development.
         </p>
-        <h2 className="text-secondary">Why Choose Us?</h2>
+        <h2 className="text-primary">Why Choose Us?</h2>
         <ul className="mb-4">
           <li>
             <strong className="text-primary-dark dark:text-primary">
@@ -80,7 +80,7 @@ const AboutPage = () => {
             We stay ahead of industry trends to provide cutting-edge solutions.
           </li>
         </ul>
-        <h2 className="text-secondary">Join Us on Our Journey</h2>
+        <h2 className="text-primary">Join Us on Our Journey</h2>
         <p>
           As we continue to grow, our commitment remains unwavering – to empower
           businesses through technology and innovation. Whether you are a
@@ -88,7 +88,7 @@ const AboutPage = () => {
           digital transformation, CodeVoss is your trusted partner.
         </p>
         <p>
-          <strong className="text-secondary">Get in Touch:</strong> Ready to
+          <strong className="text-primary">Get in Touch:</strong> Ready to
           take your business to the next level?{" "}
           <ContactModal>Contact us</ContactModal> today to discuss how we can
           collaborate and turn your ideas into reality.

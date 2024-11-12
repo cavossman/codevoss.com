@@ -22,8 +22,8 @@ const config: Config = {
         'gold-alt': '#C0995A',
         'primary-dark': '#3a3f6c',
         'primary-light': '#c6ccff',
-        primary: '#9ca5ff',
-        secondary: '#fd7d14'
+        primary: '#fd7d14',
+        secondary: '#9ca5ff',
       }
     }
   },

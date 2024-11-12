@@ -14,7 +14,7 @@ const PageHeader = ({ children }: Props) => {
     >
       <div className="flex flex-col items-center justify-center text-center font-bold text-3xl md:text-5xl">
         {typeof children === "string" ? (
-          <h1 className="text-secondary font-bold text-3xl md:text-5xl">
+          <h1 className="text-primary font-bold text-3xl md:text-5xl">
             {children}
           </h1>
         ) : (

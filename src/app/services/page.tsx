@@ -25,7 +25,7 @@ const ServicesPage = () => {
     <>
       <PageHeader>Services</PageHeader>
       <section className="container" style={{ maxWidth: "70ch" }}>
-        <h2 className="text-secondary">Ecommerce Websites</h2>
+        <h2 className="text-primary">Ecommerce Websites</h2>
         <p>
           We specialize in designing and developing robust eCommerce websites
           using WordPress and Shopify, tailored to meet your unique business
@@ -44,13 +44,13 @@ const ServicesPage = () => {
           <br />
           <a
             href="/services/websites"
-            className="mt-4 btn btn-secondary btn-sm"
+            className="mt-4 btn btn-primary btn-sm"
           >
             Learn More
           </a>
         </p>
 
-        <h2 className="text-secondary">API Development</h2>
+        <h2 className="text-primary">API Development</h2>
         <p>
           We harness the power of Laravel to create secure, scalable APIs that
           integrate seamlessly with your systems. Laravel&apos;s robust PHP
@@ -66,12 +66,12 @@ const ServicesPage = () => {
           integration, helping you unlock your applications&apos; full potential
           and achieve your business goals.
           <br />
-          <a href="/services/apis" className="mt-4 btn btn-secondary btn-sm">
+          <a href="/services/apis" className="mt-4 btn btn-primary btn-sm">
             Learn More
           </a>
         </p>
 
-        <h2 className="text-secondary">Infrastructure Management</h2>
+        <h2 className="text-primary">Infrastructure Management</h2>
         <p>
           We leverage Amazon Web Services (AWS) and Terraform to enhance the
           reliability, performance, and efficiency of your IT infrastructure.
@@ -93,20 +93,20 @@ const ServicesPage = () => {
           <br />
           <a
             href="/services/infrastructure"
-            className="mt-4 btn btn-secondary btn-sm"
+            className="mt-4 btn btn-primary btn-sm"
           >
             Learn More
           </a>
         </p>
 
-        <h2 className="text-secondary">Automation</h2>
+        <h2 className="text-primary">Automation</h2>
         <p>
           Streamline your operations and reduce manual effort with our
           automation solutions. We implement automation technologies tailored to
           your business processes, enhancing productivity and minimizing errors.
         </p>
 
-        <h2 className="text-secondary">Custom Solutions</h2>
+        <h2 className="text-primary">Custom Solutions</h2>
         <p>
           Have a unique challenge? We thrive on solving complex problems.{" "}
           <ContactModal>Contact us</ContactModal> today to discuss how we can

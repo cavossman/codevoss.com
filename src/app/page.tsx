@@ -23,7 +23,7 @@ const HomePage = () => {
         <span className="uppercase tracking-wide dark:text-white mb-2 md:mb-5">
           From Concept
         </span>
-        <span className="uppercase tracking-wide text-secondary mb-1 md:mb-3">
+        <span className="uppercase tracking-wide text-primary mb-1 md:mb-3">
           to Code
         </span>
         <ContactModal>
@@ -37,7 +37,7 @@ const HomePage = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="card order-1 flex justify-between items-center">
             <h3 className="mb-0">Websites</h3>
-            <a href="/services/websites" className="btn btn-secondary btn-sm">
+            <a href="/services/websites" className="btn btn-primary btn-sm">
               Learn More
             </a>
           </div>
@@ -52,7 +52,7 @@ const HomePage = () => {
           </div>
           <div className="card order-3 lg:order-1 flex justify-between items-center">
             <h3 className="mb-0">Software</h3>
-            <a href="/services/apis" className="btn btn-secondary btn-sm">
+            <a href="/services/apis" className="btn btn-primary btn-sm">
               Learn More
             </a>
           </div>
@@ -68,7 +68,7 @@ const HomePage = () => {
           </div>
           <div className="card order-5 lg:order-1 flex justify-between items-center">
             <h3 className="mb-0">Consultation</h3>
-            <a href="/services" className="btn btn-secondary btn-sm">
+            <a href="/services" className="btn btn-primary btn-sm">
               Learn More
             </a>
           </div>
@@ -91,7 +91,7 @@ const HomePage = () => {
                 only optimize your online presence but also resonate with your
                 audience, driving conversions and enhancing brand authority.
               </p>
-              <a href="/services" className="btn btn-secondary btn-sm">
+              <a href="/services" className="btn btn-primary btn-sm">
                 Learn More
               </a>
             </div>
@@ -102,7 +102,7 @@ const HomePage = () => {
         <h2>Why Choose Us for Your Business</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Increased Efficiency{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon
@@ -114,7 +114,7 @@ const HomePage = () => {
             <p>Automate repetitive tasks to focus on strategic activities.</p>
           </div>
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Scalable Solutions{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon
@@ -130,7 +130,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Seamless Integration{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon
@@ -146,7 +146,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Optimized User Experience{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon
@@ -162,7 +162,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Cost Savings{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon
@@ -177,7 +177,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-secondary justify-between">
+            <h3 className="flex gap-4 items-center text-primary justify-between">
               Custom Solutions{" "}
               <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
                 <FontAwesomeIcon

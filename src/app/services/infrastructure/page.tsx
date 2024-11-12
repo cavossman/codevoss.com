@@ -14,7 +14,7 @@ const InfrastructurePage = () => {
     <>
       <PageHeader>
         <>
-          <span className="text-secondary">Infrastructure Consultation</span>
+          <span className="text-primary">Infrastructure Consultation</span>
           <LogoGroup logos={["aws", "terraform", "docker"]} />
         </>
       </PageHeader>

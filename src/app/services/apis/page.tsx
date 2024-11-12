@@ -14,7 +14,7 @@ const ApisPage = () => {
     <>
       <PageHeader>
         <>
-          <span className="text-secondary">Laravel API Development</span>
+          <span className="text-primary">Laravel API Development</span>
           <LogoGroup logos={["laravel", "mysql", "php"]} />
         </>
       </PageHeader>

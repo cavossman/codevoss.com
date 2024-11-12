@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <ul className="text-right">
           <li>
-            <span className="font-bold pt-1 pb-2 mb text-secondary">
+            <span className="font-bold pt-1 pb-2 mb text-primary">
               Navigation
             </span>
           </li>

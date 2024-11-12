@@ -1,3 +1,4 @@
+import ContactFormInline from "@/components/ContactFormInline";
 import ContactModal from "@/components/ContactModal";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
@@ -14,7 +15,7 @@ const WebsitesPage = () => {
     <>
       <PageHeader>
         <>
-          <span className="text-secondary">Web Solutions</span>
+          <span className="text-primary">Web Solutions</span>
           <LogoGroup
             logos={["wordpress-simple", "shopify", "laravel", "react", "vuejs"]}
           />
@@ -178,15 +179,9 @@ const WebsitesPage = () => {
           sales and supports your growth.
         </p>
 
-        <h2>Get Started Today!</h2>
-        <p>
-          Ready to take your eCommerce business to the next level?{" "}
-          <ContactModal>Contact us today</ContactModal> to schedule a
-          consultation and learn more about how our services can benefit your
-          business. Together, we can create an online shopping experience that
-          delights your customers and drives your success.
-        </p>
+        
       </section>
+      <ContactFormInline />
     </>
   );
 };
