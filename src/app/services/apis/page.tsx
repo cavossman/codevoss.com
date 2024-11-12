@@ -1,5 +1,11 @@
+import CardWithIcon from "@/components/CardWithIcon";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
+import {
+  faShuffle,
+  faUserLock,
+  faUserShield,
+} from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
@@ -17,7 +23,7 @@ const ApisPage = () => {
           <LogoGroup logos={["laravel", "mysql", "php"]} />
         </>
       </PageHeader>
-      <section className="container content" style={{ maxWidth: "70ch" }}>
+      <section className="container content pb-12">
         <h2>
           Unlock the Full Potential of Your Applications with Our Laravel API
           Development
@@ -29,39 +35,6 @@ const ApisPage = () => {
           both flexible and reliable, ensuring efficient data exchange and
           enhanced functionality for your applications.
         </p>
-
-        <h2>Why Choose Our Laravel API Development Services?</h2>
-
-        <h3>Secure and Scalable Solutions</h3>
-        <p>
-          Security and scalability are at the forefront of our API development
-          approach. We leverage Laravel&apos;s built-in security features to
-          protect your data and ensure that your APIs can handle increased loads
-          as your business grows. Our solutions are designed to be robust and
-          resilient, giving you peace of mind that your applications are secure
-          and scalable.
-        </p>
-
-        <h3>Seamless Integration</h3>
-        <p>
-          Our APIs are crafted to integrate smoothly with your existing systems,
-          facilitating effortless communication and data exchange between
-          different applications. Whether you need to connect with third-party
-          services or internal systems, our Laravel APIs ensure seamless and
-          efficient integration, streamlining your operations and enhancing your
-          workflow.
-        </p>
-
-        <h3>Flexibility and Reliability</h3>
-        <p>
-          Laravel&apos;s flexible framework allows us to create APIs that can
-          adapt to your evolving business needs. We build reliable solutions
-          that ensure consistent performance, minimizing downtime and
-          disruptions. Our APIs are tested rigorously to guarantee their
-          reliability and effectiveness in real-world scenarios.
-        </p>
-
-        <h2>Maximizing Your Applications&apos; Capabilities</h2>
 
         <h3>Enhanced Functionality</h3>
         <p>
@@ -81,6 +54,34 @@ const ApisPage = () => {
           you need a simple API for basic data exchange or a complex system for
           comprehensive integrations, we have the expertise to deliver.
         </p>
+      </section>
+      <section className="container content">
+        <h2>Why Choose Our Laravel API Development Services?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <CardWithIcon title="Secure and Scalable Solutions" icon={faUserLock}>
+            Security and scalability are at the forefront of our API development
+            approach. We leverage Laravel&apos;s built-in security features to
+            protect your data and ensure that your APIs can handle increased
+            loads as your business grows. Our solutions are designed to be
+            robust and resilient, giving you peace of mind that your
+            applications are secure and scalable.
+          </CardWithIcon>
+          <CardWithIcon title="Seamless Integration" icon={faShuffle}>
+            Our APIs are crafted to integrate smoothly with your existing
+            systems, facilitating effortless communication and data exchange
+            between different applications. Whether you need to connect with
+            third-party services or internal systems, our Laravel APIs ensure
+            seamless and efficient integration, streamlining your operations and
+            enhancing your workflow.
+          </CardWithIcon>
+          <CardWithIcon title="Flexibility and Reliability" icon={faUserShield}>
+            Laravel&apos;s flexible framework allows us to create APIs that can
+            adapt to your evolving business needs. We build reliable solutions
+            that ensure consistent performance, minimizing downtime and
+            disruptions. Our APIs are tested rigorously to guarantee their
+            reliability and effectiveness in real-world scenarios.
+          </CardWithIcon>
+        </div>
       </section>
     </>
   );

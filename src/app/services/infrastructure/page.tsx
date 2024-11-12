@@ -1,5 +1,12 @@
+import CardWithIcon from "@/components/CardWithIcon";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
+import {
+  faChartLine,
+  faCode,
+  faGlobeAmericas,
+  faMoneyBillTrendUp,
+} from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
@@ -17,7 +24,7 @@ const InfrastructurePage = () => {
           <LogoGroup logos={["aws", "terraform", "docker"]} />
         </>
       </PageHeader>
-      <section className="container content" style={{ maxWidth: "70ch" }}>
+      <section className="container content pb-12">
         <h2>Enhance Your IT Infrastructure with AWS and Terraform</h2>
         <p>
           At CodeVoss, we leverage Amazon Web Services (AWS) and Terraform to
@@ -27,46 +34,6 @@ const InfrastructurePage = () => {
           for optimal performance and cost-efficiency. With AWS’s global network
           and security features, we ensure your applications remain accessible
           and protected.
-        </p>
-
-        <h2>Why Choose Our AWS and Terraform Solutions?</h2>
-
-        <h3>Scalable and Secure Cloud Services</h3>
-        <p>
-          AWS offers a comprehensive suite of cloud services that are scalable,
-          secure, and highly available. We utilize AWS to build and manage your
-          IT infrastructure, ensuring it can handle varying workloads and
-          maintain high availability. AWS&apos;s advanced security features
-          protect your data and applications, providing peace of mind that your
-          systems are secure.
-        </p>
-
-        <h3>Optimal Performance and Cost-Efficiency</h3>
-        <p>
-          We design your infrastructure with performance and cost-efficiency in
-          mind. By leveraging AWS’s diverse services, we can optimize your
-          infrastructure to meet your specific needs while controlling costs.
-          Our solutions ensure that you get the most out of your investment in
-          cloud technology.
-        </p>
-
-        <h3>Global Network and Availability</h3>
-        <p>
-          With AWS’s global network, we ensure that your applications are
-          accessible from anywhere in the world. AWS’s extensive infrastructure
-          and services support high availability and reliability, minimizing
-          downtime and ensuring that your applications remain operational at all
-          times.
-        </p>
-
-        <h3>Infrastructure as Code with Terraform</h3>
-        <p>
-          Using Terraform, we manage your infrastructure as code, enabling
-          consistent and repeatable deployments while reducing manual errors.
-          This automation facilitates rapid provisioning, efficient resource
-          management, and effective cost control. Terraform allows us to define
-          your infrastructure in a declarative configuration file, making it
-          easy to version control and collaborate on infrastructure changes.
         </p>
 
         <h2>Our Approach</h2>
@@ -107,6 +74,54 @@ const InfrastructurePage = () => {
           infrastructure that supports your business growth. Trust us to create
           a cloud environment that adapts to your needs and drives your success.
         </p>
+      </section>
+      <section className="container content">
+        <h2>Why Choose Our AWS and Terraform Solutions?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <CardWithIcon
+            title="Scalable and Secure Cloud Services"
+            icon={faChartLine}
+          >
+            AWS offers a comprehensive suite of cloud services that are
+            scalable, secure, and highly available. We utilize AWS to build and
+            manage your IT infrastructure, ensuring it can handle varying
+            workloads and maintain high availability. AWS&apos;s advanced
+            security features protect your data and applications, providing
+            peace of mind that your systems are secure.
+          </CardWithIcon>
+          <CardWithIcon
+            title="Optimal Performance and Cost-Efficiency"
+            icon={faMoneyBillTrendUp}
+          >
+            We design your infrastructure with performance and cost-efficiency
+            in mind. By leveraging AWS’s diverse services, we can optimize your
+            infrastructure to meet your specific needs while controlling costs.
+            Our solutions ensure that you get the most out of your investment in
+            cloud technology.
+          </CardWithIcon>
+          <CardWithIcon
+            title="Global Network and Availability"
+            icon={faGlobeAmericas}
+          >
+            With AWS’s global network, we ensure that your applications are
+            accessible from anywhere in the world. AWS’s extensive
+            infrastructure and services support high availability and
+            reliability, minimizing downtime and ensuring that your applications
+            remain operational at all times.
+          </CardWithIcon>
+          <CardWithIcon
+            title="Infrastructure as Code with Terraform"
+            icon={faCode}
+          >
+            Using Terraform, we manage your infrastructure as code, enabling
+            consistent and repeatable deployments while reducing manual errors.
+            This automation facilitates rapid provisioning, efficient resource
+            management, and effective cost control. Terraform allows us to
+            define your infrastructure in a declarative configuration file,
+            making it easy to version control and collaborate on infrastructure
+            changes.
+          </CardWithIcon>
+        </div>
       </section>
     </>
   );

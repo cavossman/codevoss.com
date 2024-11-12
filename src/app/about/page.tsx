@@ -1,4 +1,11 @@
+import CardWithIcon from "@/components/CardWithIcon";
 import PageHeader from "@/components/PageHeader";
+import {
+  faArrowsSpin,
+  faFlask,
+  faMedal,
+  faPeopleGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
@@ -11,7 +18,7 @@ const AboutPage = () => {
   return (
     <>
       <PageHeader>About</PageHeader>
-      <section className="container" style={{ maxWidth: "70ch" }}>
+      <section className="container pb-20">
         <h2 className="text-primary">Our Founding Story</h2>
         <p>
           Founded in 2024 by Collin and Jenny Vossman, CodeVoss began with a
@@ -49,36 +56,6 @@ const AboutPage = () => {
           tailor-made solutions that drive success. Our agile methodology
           ensures flexibility and efficiency at every stage of development.
         </p>
-        <h2 className="text-primary">Why Choose Us?</h2>
-        <ul className="mb-4">
-          <li>
-            <strong className="text-primary-dark dark:text-primary">
-              Expertise:
-            </strong>{" "}
-            Our team consists of seasoned professionals with a passion for
-            innovation.
-          </li>
-          <li>
-            <strong className="text-primary-dark dark:text-primary">
-              Client-Centric:
-            </strong>{" "}
-            We prioritize understanding your business objectives and delivering
-            measurable results.
-          </li>
-          <li>
-            <strong className="text-primary-dark dark:text-primary">
-              Quality Assurance:
-            </strong>{" "}
-            Rigorous testing and QA processes ensure reliable and robust
-            solutions.
-          </li>
-          <li>
-            <strong className="text-primary-dark dark:text-primary">
-              Continuous Improvement:
-            </strong>{" "}
-            We stay ahead of industry trends to provide cutting-edge solutions.
-          </li>
-        </ul>
         <h2 className="text-primary">Join Us on Our Journey</h2>
         <p>
           As we continue to grow, our commitment remains unwavering – to empower
@@ -86,6 +63,26 @@ const AboutPage = () => {
           startup with a bold vision or an established enterprise seeking
           digital transformation, CodeVoss is your trusted partner.
         </p>
+      </section>
+      <section className="container content">
+        <h2>Why Choose Us?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <CardWithIcon title="Expertise" icon={faFlask}>
+            Our team consists of seasoned professionals with a passion for
+            innovation.
+          </CardWithIcon>
+          <CardWithIcon title="Client-Centric" icon={faPeopleGroup}>
+            We prioritize understanding your business objectives and delivering
+            measurable results.
+          </CardWithIcon>
+          <CardWithIcon title="Quality Assurance" icon={faMedal}>
+            Rigorous testing and QA processes ensure reliable and robust
+            solutions.
+          </CardWithIcon>
+          <CardWithIcon title="Continuous Improvement" icon={faArrowsSpin}>
+            We stay ahead of industry trends to provide cutting-edge solutions.
+          </CardWithIcon>
+        </div>
       </section>
     </>
   );

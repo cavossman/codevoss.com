@@ -1,3 +1,4 @@
+import CardWithIcon from "@/components/CardWithIcon";
 import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
 import {
@@ -101,97 +102,36 @@ const HomePage = () => {
       <section className="container content">
         <h2>Why Choose Us for Your Business</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Increased Efficiency{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faStopwatch}
-                />
-              </div>
-            </h3>
-            <p>Automate repetitive tasks to focus on strategic activities.</p>
-          </div>
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Scalable Solutions{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faArrowTrendUp}
-                />
-              </div>
-            </h3>
-            <p>
-              Our eCommerce and API solutions are designed to grow with your
-              business, adapting to increasing demands and evolving
-              requirements.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Seamless Integration{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faLink}
-                />
-              </div>
-            </h3>
-            <p>
-              Benefit from our expertise in integrating various systems and
-              platforms, including custom APIs and CRM systems, to ensure smooth
-              data flow and enhanced functionality.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Optimized User Experience{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faUserAstronaut}
-                />
-              </div>
-            </h3>
-            <p>
-              With our customized eCommerce solutions, including platforms like
-              WordPress and Shopify, you can provide an engaging and efficient
-              shopping experience for your customers.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Cost Savings{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faSackDollar}
-                />
-              </div>
-            </h3>
-            <p>
-              Reduce operational costs and improve ROI by automating processes
-              and optimizing your technology stack for efficiency.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
-            <h3 className="flex gap-4 items-center text-primary justify-between">
-              Custom Solutions{" "}
-              <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-                <FontAwesomeIcon
-                  className="dark:text-white inline w-4"
-                  icon={faLaptop}
-                />
-              </div>
-            </h3>
-            <p>
-              Receive tailored solutions that align with your unique business
-              needs, whether it&apos;s developing secure APIs, automating
-              processes, or creating high-performance eCommerce sites.
-            </p>
-          </div>
+          <CardWithIcon title="Increased Efficiency" icon={faStopwatch}>
+            Automate repetitive tasks to focus on strategic activities.
+          </CardWithIcon>
+          <CardWithIcon title="Scalable Solutions" icon={faArrowTrendUp}>
+            Our eCommerce and API solutions are designed to grow with your
+            business, adapting to increasing demands and evolving requirements.
+          </CardWithIcon>
+          <CardWithIcon title="Seamless Integration" icon={faLink}>
+            Benefit from our expertise in integrating various systems and
+            platforms, including custom APIs and CRM systems, to ensure smooth
+            data flow and enhanced functionality.
+          </CardWithIcon>
+
+          <CardWithIcon
+            title=" Optimized User Experience"
+            icon={faUserAstronaut}
+          >
+            With our customized eCommerce solutions, including platforms like
+            WordPress and Shopify, you can provide an engaging and efficient
+            shopping experience for your customers.
+          </CardWithIcon>
+          <CardWithIcon title="Cost Savings" icon={faSackDollar}>
+            Reduce operational costs and improve ROI by automating processes and
+            optimizing your technology stack for efficiency.
+          </CardWithIcon>
+          <CardWithIcon title="Custom Solutions" icon={faLaptop}>
+            Receive tailored solutions that align with your unique business
+            needs, whether it&apos;s developing secure APIs, automating
+            processes, or creating high-performance eCommerce sites.
+          </CardWithIcon>
         </div>
       </section>
     </>

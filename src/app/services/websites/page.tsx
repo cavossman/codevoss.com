@@ -1,5 +1,7 @@
+import CardWithIcon from "@/components/CardWithIcon";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
@@ -19,7 +21,7 @@ const WebsitesPage = () => {
           />
         </>
       </PageHeader>
-      <section className="container content" style={{ maxWidth: "70ch" }}>
+      <section className="container content pb-12">
         <h2>Elevate Your Online Store with Our Expert eCommerce Solutions</h2>
         <p>
           Welcome to CodeVoss, where we specialize in designing and developing
@@ -28,49 +30,7 @@ const WebsitesPage = () => {
           solutions that meet your unique business needs, ensuring that your
           online store stands out in the competitive digital marketplace.
         </p>
-
-        <h2>Why Choose Us?</h2>
-
-        <h3>Custom Design & Development</h3>
-        <p>
-          At CodeVoss, we understand that every business is unique. That\&apos;s
-          why we offer custom design and development services that align with
-          your brand identity and business goals. Whether you&apos;re starting
-          from scratch or looking to revamp your existing online store, our team
-          will work closely with you to create a visually appealing and
-          functional website that reflects your vision.
-        </p>
-
-        <h3>Enhanced User Experience</h3>
-        <p>
-          User experience is at the heart of our design philosophy. We create
-          intuitive and engaging interfaces that make it easy for your customers
-          to navigate your site and find what they&apos;re looking for. Our goal
-          is to enhance the user journey, ensuring that visitors have a seamless
-          and enjoyable shopping experience from start to finish.
-        </p>
-
-        <h3>Streamlined Navigation</h3>
-        <p>
-          A well-structured website is key to driving conversions. We design
-          websites with streamlined navigation, making it simple for your
-          customers to browse products, access information, and complete
-          purchases. By organizing your site in a logical and user-friendly
-          manner, we help reduce bounce rates and increase customer
-          satisfaction.
-        </p>
-
-        <h3>Drive Conversions</h3>
-        <p>
-          Our eCommerce solutions are crafted to convert visitors into
-          customers. Through strategic design, effective call-to-actions, and
-          optimized checkout processes, we focus on driving sales and maximizing
-          your return on investment. We utilize best practices in eCommerce to
-          ensure that your site not only attracts visitors but also encourages
-          them to make a purchase.
-        </p>
-
-        <h2>WordPress with WooCommerce</h2>
+        <h3>WordPress with WooCommerce</h3>
         <p>
           For businesses seeking the flexibility and scalability of WordPress,
           we offer expert development services using WooCommerce. This powerful
@@ -81,7 +41,6 @@ const WebsitesPage = () => {
           meet your specific requirements, ensuring a seamless integration with
           your WordPress site.
         </p>
-
         <h3>Benefits of WooCommerce:</h3>
         <ul>
           <li>
@@ -176,8 +135,43 @@ const WebsitesPage = () => {
           create an online store that not only looks impressive but also drives
           sales and supports your growth.
         </p>
-
-        
+      </section>
+      <section className="container content">
+        <h2>Why Choose Us?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <CardWithIcon title="Custom Design & Development" icon={faUser}>
+            At CodeVoss, we understand that every business is unique.
+            That&apos;s why we offer custom design and development services that
+            align with your brand identity and business goals. Whether
+            you&apos;re starting from scratch or looking to revamp your existing
+            online store, our team will work closely with you to create a
+            visually appealing and functional website that reflects your vision.
+          </CardWithIcon>
+          <CardWithIcon title="Client-Centric" icon={faUser}>
+            User experience is at the heart of our design philosophy. We create
+            intuitive and engaging interfaces that make it easy for your
+            customers to navigate your site and find what they&apos;re looking
+            for. Our goal is to enhance the user journey, ensuring that visitors
+            have a seamless and enjoyable shopping experience from start to
+            finish.
+          </CardWithIcon>
+          <CardWithIcon title="Streamlined Navigation" icon={faUser}>
+            A well-structured website is key to driving conversions. We design
+            websites with streamlined navigation, making it simple for your
+            customers to browse products, access information, and complete
+            purchases. By organizing your site in a logical and user-friendly
+            manner, we help reduce bounce rates and increase customer
+            satisfaction.
+          </CardWithIcon>
+          <CardWithIcon title="Drive Conversions" icon={faUser}>
+            Our eCommerce solutions are crafted to convert visitors into
+            customers. Through strategic design, effective call-to-actions, and
+            optimized checkout processes, we focus on driving sales and
+            maximizing your return on investment. We utilize best practices in
+            eCommerce to ensure that your site not only attracts visitors but
+            also encourages them to make a purchase.
+          </CardWithIcon>
+        </div>
       </section>
     </>
   );

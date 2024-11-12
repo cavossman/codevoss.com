@@ -24,7 +24,7 @@ const ServicesPage = () => {
   return (
     <>
       <PageHeader>Services</PageHeader>
-      <section className="container" style={{ maxWidth: "70ch" }}>
+      <section className="container">
         <h2 className="text-primary">Ecommerce Websites</h2>
         <p>
           We specialize in designing and developing robust eCommerce websites
@@ -42,10 +42,7 @@ const ServicesPage = () => {
           efficient online stores that transform your business and boost your
           success in the digital marketplace.
           <br />
-          <a
-            href="/services/websites"
-            className="mt-4 btn btn-primary btn-sm"
-          >
+          <a href="/services/websites" className="mt-4 btn btn-primary btn-sm">
             Learn More
           </a>
         </p>
