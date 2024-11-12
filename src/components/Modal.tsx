@@ -43,10 +43,10 @@ const Modal: React.FC<ModalProps> = ({ title, isOpen, onClose, children }) => {
       {isOpen &&
         createPortal(
           <div
-            className="fixed top-0 left-0 z-50 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center"
+            className="fixed top-0 left-0 z-50 w-full h-full bg-dark-light bg-opacity-50 flex items-center justify-center"
             onClick={handleOutsideClick}
           >
-            <div className="bg-white dark:bg-dark w-96 p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark border border-dark w-96 p-6 rounded-lg shadow-lg">
               <div className="flex justify-between pb-6">
                 <strong>{title}</strong>
                 <button
