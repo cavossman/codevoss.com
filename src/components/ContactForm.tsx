@@ -1,7 +1,9 @@
-"use client"
+"use client";
 import { FC, useState } from "react";
 
-const ContactForm: FC<{ onSubmit?: () => void }> = ({ onSubmit = () => {} })  => {
+const ContactForm: FC<{ onSubmit?: () => void }> = ({
+  onSubmit = () => {},
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,10 +39,7 @@ const ContactForm: FC<{ onSubmit?: () => void }> = ({ onSubmit = () => {} })  =>
   return (
     <form onSubmit={handleSubmit} className="text-black">
       <div className="mb-4">
-        <label
-          htmlFor="name"
-          className="block text-sm font-medium dark:text-white"
-        >
+        <label htmlFor="name" className="block text-sm font-medium text-white">
           Name
         </label>
         <input
@@ -55,10 +54,7 @@ const ContactForm: FC<{ onSubmit?: () => void }> = ({ onSubmit = () => {} })  =>
       </div>
 
       <div className="mb-4">
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium dark:text-white"
-        >
+        <label htmlFor="email" className="block text-sm font-medium text-white">
           Email
         </label>
         <input
@@ -75,7 +71,7 @@ const ContactForm: FC<{ onSubmit?: () => void }> = ({ onSubmit = () => {} })  =>
       <div className="mb-4">
         <label
           htmlFor="message"
-          className="block text-sm font-medium dark:text-white"
+          className="block text-sm font-medium text-white"
         >
           Message
         </label>

@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 
 const MobileCloseButton = () => {
   return (
-    <button className="navbar-burger flex items-center dark:text-white border rounded p-2">
+    <button className="navbar-burger flex items-center text-white border rounded p-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -24,7 +24,7 @@ const MobileCloseButton = () => {
 
 const MobileOpenButton = () => {
   return (
-    <button className="navbar-burger flex items-center dark:text-white border rounded p-2">
+    <button className="navbar-burger flex items-center text-white border rounded p-2">
       <svg
         className="block h-4 w-4 fill-current"
         viewBox="0 0 20 20"
@@ -66,12 +66,12 @@ const MobileMenu = () => {
         createPortal(
           <div
             id="mobile-menu"
-            className="absolute top-20 right-4 bg-white dark:bg-dark p-6 border boder-color-white rounded flex flex-col gap-4 text-right"
+            className="absolute top-20 right-4 bg-dark p-6 border boder-color-white rounded flex flex-col gap-4 text-right"
           >
-            <Link className="dark:text-white" href="/services">
+            <Link className="text-white" href="/services">
               Services
             </Link>
-            <Link className="dark:text-white" href="/about">
+            <Link className="text-white" href="/about">
               About
             </Link>
           </div>,
@@ -84,10 +84,10 @@ const MobileMenu = () => {
 const MainMenu = () => {
   return (
     <div className="hidden sm:flex gap-4">
-      <Link className="dark:text-white" href="/services">
+      <Link className="text-white" href="/services">
         Services
       </Link>
-      <Link className="dark:text-white" href="/about">
+      <Link className="text-white" href="/about">
         About
       </Link>
     </div>

@@ -8,11 +8,11 @@ const CardWithIcon: FC<{
   icon: IconDefinition;
 }> = ({ title, children, icon }) => {
   return (
-    <div className="bg-white dark:bg-dark-light p-4 rounded-lg">
+    <div className="bg-dark-light p-4 rounded-lg">
       <h3 className="flex gap-4 items-center text-primary justify-between">
         {title}
-        <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-light dark:bg-dark">
-          <FontAwesomeIcon className="dark:text-white inline w-4" icon={icon} />
+        <div className="flex items-center py-3 px-4 rounded-lg aspect-square bg-dark">
+          <FontAwesomeIcon className="text-white inline w-4" icon={icon} />
         </div>
       </h3>
       <p>{children}</p>

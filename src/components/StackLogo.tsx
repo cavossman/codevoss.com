@@ -8,7 +8,7 @@ const StackLogo: FC<{
   if (["mysql", "terraform"].includes(logo)) {
     return (
       <img
-        className="dark:filter stack-logo w-12"
+        className="filter stack-logo w-12"
         src={`/images/logos/${logo}.svg`}
         alt={`${logo} logo`}
       />

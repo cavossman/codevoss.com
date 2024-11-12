@@ -43,7 +43,7 @@
     }
 
     a {
-        @apply text-primary-dark dark:text-inherit hover:text-primary;
+        @apply text-primary-dark text-inherit hover:text-primary;
     }
 
     p .contact-modal,
@@ -58,7 +58,7 @@
     }
 
     .card {
-        @apply bg-white dark:bg-dark-light p-4 rounded-lg;
+        @apply bg-dark-light p-4 rounded-lg;
     }
 
     .btn {
@@ -82,7 +82,7 @@
             @apply mb-3;
 
             strong {
-                @apply text-primary-dark dark:text-primary;
+                @apply text-primary;
             }
         }
     }

@@ -12,7 +12,7 @@ const Footer = () => {
           <Logo />
           <span>CodeVoss Software Solutions</span>
           <ContactModal>
-            <div className="block text-xs md:text-lg text-center dark:text-white font-normal border rounded px-2 md:px-3 py-1 mt-4">
+            <div className="block text-xs md:text-lg text-center text-white font-normal border rounded px-2 md:px-3 py-1 mt-4">
               Get in Touch
             </div>
           </ContactModal>
