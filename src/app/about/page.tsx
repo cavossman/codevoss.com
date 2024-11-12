@@ -1,4 +1,3 @@
-import ContactModal from "@/components/ContactModal";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
 
@@ -86,12 +85,6 @@ const AboutPage = () => {
           businesses through technology and innovation. Whether you are a
           startup with a bold vision or an established enterprise seeking
           digital transformation, CodeVoss is your trusted partner.
-        </p>
-        <p>
-          <strong className="text-primary">Get in Touch:</strong> Ready to
-          take your business to the next level?{" "}
-          <ContactModal>Contact us</ContactModal> today to discuss how we can
-          collaborate and turn your ideas into reality.
         </p>
       </section>
     </>

@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import ContactModal from "./ContactModal";
+import ContactFormInline from "./ContactFormInline";
 
 const Footer = () => {
   return (
     <footer>
+      <ContactFormInline />
       <div className="flex justify-between container py-9">
         <div>
           <Logo />

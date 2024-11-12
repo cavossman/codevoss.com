@@ -1,5 +1,3 @@
-import ContactFormInline from "@/components/ContactFormInline";
-import ContactModal from "@/components/ContactModal";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
@@ -181,7 +179,6 @@ const WebsitesPage = () => {
 
         
       </section>
-      <ContactFormInline />
     </>
   );
 };

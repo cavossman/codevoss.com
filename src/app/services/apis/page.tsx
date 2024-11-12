@@ -1,4 +1,3 @@
-import ContactModal from "@/components/ContactModal";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
@@ -81,15 +80,6 @@ const ApisPage = () => {
           that align with your objectives and technical specifications. Whether
           you need a simple API for basic data exchange or a complex system for
           comprehensive integrations, we have the expertise to deliver.
-        </p>
-
-        <h2>Get Started Today!</h2>
-        <p>
-          Ready to enhance your applications with our Laravel API development
-          services? <ContactModal>Contact us today</ContactModal> to schedule a
-          consultation and learn more about how we can help you achieve your
-          business goals. Let CodeVoss be your partner in creating secure,
-          scalable, and reliable APIs that drive your success.
         </p>
       </section>
     </>

@@ -1,4 +1,3 @@
-import ContactModal from "@/components/ContactModal";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next/types";
@@ -107,16 +106,6 @@ const InfrastructurePage = () => {
           and Terraform allows us to provide reliable, scalable, and secure
           infrastructure that supports your business growth. Trust us to create
           a cloud environment that adapts to your needs and drives your success.
-        </p>
-
-        <h2>Get Started Today!</h2>
-        <p>
-          Ready to enhance your IT infrastructure with AWS and Terraform?{" "}
-          <ContactModal>Contact us today</ContactModal> to schedule a
-          consultation and learn more about how we can help you achieve your
-          business goals. Let CodeVoss be your partner in creating a cloud
-          infrastructure that maximizes efficiency and uptime while adapting to
-          your evolving needs.
         </p>
       </section>
     </>
