@@ -1,11 +1,15 @@
 import CardWithIcon from "@/components/CardWithIcon";
 import LogoGroup from "@/components/LogoGroup";
 import PageHeader from "@/components/PageHeader";
+import ProcessItem from "@/components/ProcessItem";
 import {
   faChartLine,
   faCode,
+  faComputer,
   faGlobeAmericas,
+  faListCheck,
   faMoneyBillTrendUp,
+  faRocket,
 } from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
 
@@ -36,36 +40,6 @@ const InfrastructurePage = () => {
           and protected.
         </p>
 
-        <h2>Our Approach</h2>
-
-        <h3>Assessment and Planning</h3>
-        <p>
-          We begin by assessing your current infrastructure and understanding
-          your business goals. This allows us to design a tailored solution that
-          meets your specific needs. Our planning process includes identifying
-          the right AWS services and Terraform configurations to optimize your
-          infrastructure for performance and cost-efficiency.
-        </p>
-
-        <h3>Implementation and Deployment</h3>
-        <p>
-          Our team of experts implements the planned infrastructure using AWS
-          and Terraform. We ensure that the deployment process is smooth and
-          that your infrastructure is set up correctly and efficiently. Our
-          approach minimizes downtime and disruptions, ensuring a seamless
-          transition to the new setup.
-        </p>
-
-        <h3>Monitoring and Optimization</h3>
-        <p>
-          Once your infrastructure is deployed, we continuously monitor its
-          performance to ensure it meets your business goals. We use advanced
-          monitoring tools to track key metrics and identify areas for
-          improvement. Our ongoing optimization efforts ensure that your
-          infrastructure remains efficient, cost-effective, and adaptable to
-          your evolving needs.
-        </p>
-
         <h2>Maximize Efficiency and Uptime</h2>
         <p>
           At CodeVoss, we are committed to delivering cloud infrastructure
@@ -75,6 +49,36 @@ const InfrastructurePage = () => {
           a cloud environment that adapts to your needs and drives your success.
         </p>
       </section>
+
+      <section className="container content">
+        <h2 className="mb-12">Our Approach</h2>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          <ProcessItem title="Assessment and Planning" icon={faListCheck}>
+            We begin by assessing your current infrastructure and understanding
+            your business goals. This allows us to design a tailored solution
+            that meets your specific needs. Our planning process includes
+            identifying the right AWS services and Terraform configurations to
+            optimize your infrastructure for performance and cost-efficiency.
+          </ProcessItem>
+          <ProcessItem title="Implementation and Deployment" icon={faRocket}>
+            Our team of experts implements the planned infrastructure using AWS
+            and Terraform. We ensure that the deployment process is smooth and
+            that your infrastructure is set up correctly and efficiently. Our
+            approach minimizes downtime and disruptions, ensuring a seamless
+            transition to the new setup.
+          </ProcessItem>
+          <ProcessItem title="Monitoring and Optimization" icon={faComputer}>
+            Once your infrastructure is deployed, we continuously monitor its
+            performance to ensure it meets your business goals. We use advanced
+            monitoring tools to track key metrics and identify areas for
+            improvement. Our ongoing optimization efforts ensure that your
+            infrastructure remains efficient, cost-effective, and adaptable to
+            your evolving needs.
+          </ProcessItem>
+        </div>
+      </section>
+
       <section className="container content">
         <h2>Why Choose Our AWS and Terraform Solutions?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

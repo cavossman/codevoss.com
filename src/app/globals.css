@@ -12,15 +12,15 @@
     }
 
     h1 {
-        @apply text-3xl heading;
+        @apply text-5xl heading;
     }
 
     h2 {
-        @apply text-2xl heading;
+        @apply text-4xl heading mb-12;
     }
 
     h3 {
-        @apply text-xl heading;
+        @apply text-2xl heading mb-8;
     }
 
     p {
@@ -39,7 +39,7 @@
 
     section {
         @apply pt-4;
-        @apply pb-[9rem];
+        @apply pb-12 lg:pb-[9rem];
     }
 
     a {
@@ -86,4 +86,19 @@
             }
         }
     }
+
+    .process-item {
+        @apply relative z-10;
+
+        &:not(:last-child):after {
+            content: '';
+
+            @apply absolute w-full h-full lg:h-0 mt-10 left-7 lg:left-8 z-0 border-s-2 lg:border-b-2 border-dashed border-dark-light;
+        }
+
+        .icon {
+            z-index: 10;
+        }
+    }
+
 }

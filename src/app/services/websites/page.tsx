@@ -1,5 +1,6 @@
 import CardWithIcon from "@/components/CardWithIcon";
 import LogoGroup from "@/components/LogoGroup";
+import OurProcess from "@/components/OurProcess";
 import PageHeader from "@/components/PageHeader";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Metadata } from "next/types";
@@ -21,7 +22,7 @@ const WebsitesPage = () => {
           />
         </>
       </PageHeader>
-      <section className="container content pb-12">
+      <section className="container content">
         <h2>Elevate Your Online Store with Our Expert eCommerce Solutions</h2>
         <p>
           Welcome to CodeVoss, where we specialize in designing and developing
@@ -90,42 +91,6 @@ const WebsitesPage = () => {
           </li>
         </ul>
 
-        <h2>Our Process</h2>
-
-        <h3>Consultation & Strategy</h3>
-        <p>
-          We begin with a detailed consultation to understand your business
-          goals, target audience, and specific requirements. Based on this
-          information, we develop a comprehensive strategy that outlines the
-          project scope, timeline, and deliverables.
-        </p>
-
-        <h3>Design & Development</h3>
-        <p>
-          Our design team creates visually stunning and user-friendly layouts
-          that align with your brand. Once the design is approved, our
-          developers bring it to life using the latest technologies and best
-          practices in eCommerce development.
-        </p>
-
-        <h3>Testing & Launch</h3>
-        <p>
-          Before going live, we rigorously test your site to ensure it performs
-          flawlessly across all devices and browsers. We check for usability,
-          functionality, and security to provide a seamless shopping experience
-          for your customers. Once testing is complete, we launch your site and
-          monitor its performance to ensure everything runs smoothly.
-        </p>
-
-        <h3>Ongoing Support & Maintenance</h3>
-        <p>
-          We believe in building long-term relationships with our clients. Our
-          support doesn’t end at launch. We offer ongoing maintenance and
-          support services to keep your site updated, secure, and performing at
-          its best. Whether you need technical assistance, updates, or new
-          features, we’re here to help.
-        </p>
-
         <h2>Transform Your Business</h2>
         <p>
           At CodeVoss, we’re committed to helping you succeed in the digital
@@ -136,6 +101,7 @@ const WebsitesPage = () => {
           sales and supports your growth.
         </p>
       </section>
+      <OurProcess />
       <section className="container content">
         <h2>Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

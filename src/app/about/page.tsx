@@ -1,4 +1,5 @@
 import CardWithIcon from "@/components/CardWithIcon";
+import OurProcess from "@/components/OurProcess";
 import PageHeader from "@/components/PageHeader";
 import {
   faArrowsSpin,
@@ -40,7 +41,7 @@ const AboutPage = () => {
           insights and customer-centric approach ensure that CodeVoss not only
           meets but exceeds client expectations.
         </p>
-        <h2 className="text-primary">What Drives Us</h2>
+        {/* <h2 className="text-primary">What Drives Us</h2>
         <p>
           At CodeVoss, we believe in harnessing the latest technologies to solve
           complex challenges. Whether it&#39;s developing cutting-edge software
@@ -62,8 +63,9 @@ const AboutPage = () => {
           businesses through technology and innovation. Whether you are a
           startup with a bold vision or an established enterprise seeking
           digital transformation, CodeVoss is your trusted partner.
-        </p>
+        </p> */}
       </section>
+      <OurProcess />
       <section className="container content">
         <h2>Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

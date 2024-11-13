@@ -24,10 +24,7 @@ const ApisPage = () => {
         </>
       </PageHeader>
       <section className="container content pb-12">
-        <h2>
-          Unlock the Full Potential of Your Applications with Our Laravel API
-          Development
-        </h2>
+        <h2>Unlock the Full Potential of Your Business</h2>
         <p>
           At CodeVoss, we harness the power of Laravel to create secure,
           scalable APIs that integrate seamlessly with your systems.
