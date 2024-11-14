@@ -29,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ title, isOpen, onClose, children }) => {
     return () => {
       document.removeEventListener("keydown", handleEscapeKey);
     };
-  }, [closeModal]);
+  });
 
   // Handle click outside of modal to close it
   const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {

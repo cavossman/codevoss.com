@@ -3,102 +3,102 @@
 @tailwind utilities;
 
 @layer base {
-    .container {
-        @apply px-4 mx-auto;
+  .container {
+    @apply px-4 mx-auto;
+  }
+
+  .heading {
+    @apply font-bold tracking-wide mb-4;
+  }
+
+  h1 {
+    @apply text-5xl heading;
+  }
+
+  h2 {
+    @apply text-4xl heading mb-12;
+  }
+
+  h3 {
+    @apply text-2xl heading mb-8;
+  }
+
+  p {
+    @apply mb-4 leading-loose;
+
+    + h2 {
+      @apply mt-8;
+    }
+  }
+
+  li,
+  ul {
+    + h2 {
+      @apply mt-8;
+    }
+  }
+
+  section {
+    @apply pt-4;
+    @apply pb-12 lg:pb-[9rem];
+  }
+
+  a {
+    @apply text-primary-dark text-inherit hover:text-primary;
+  }
+
+  p .contact-modal,
+  p a {
+    @apply underline underline-offset-4 hover:text-primary;
+  }
+
+  .stack-logo {
+    --tw-brightness: brightness(0);
+    --tw-invert: invert(100%);
+    filter: var(--tw-filter);
+  }
+
+  .card {
+    @apply bg-dark-light p-4 rounded-lg;
+  }
+
+  .btn {
+    @apply inline-block px-4 py-3 rounded-lg no-underline;
+  }
+
+  .btn-sm {
+    @apply px-3 py-2 text-sm;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-black hover:text-black;
+  }
+
+  .content {
+    h1,
+    h2,
+    h3,
+    h4 {
+      @apply text-primary;
     }
 
-    .heading {
-        @apply font-bold tracking-wide mb-4;
+    ul li,
+    ol li {
+      @apply mb-3;
+    }
+  }
+
+  .process-item {
+    @apply relative z-10;
+
+    &:not(:last-child):after {
+      content: "";
+
+      @apply absolute w-full h-full lg:h-0 mt-10 left-7 lg:left-8 z-0 border-s-2 lg:border-b-2 border-dashed border-dark-light;
     }
 
-    h1 {
-        @apply text-5xl heading;
+    .icon {
+      z-index: 10;
     }
-
-    h2 {
-        @apply text-4xl heading mb-12;
-    }
-
-    h3 {
-        @apply text-2xl heading mb-8;
-    }
-
-    p {
-        @apply mb-4 leading-loose;
-
-        + h2 {
-            @apply mt-8;
-        }
-    }
-
-    li, ul {
-        + h2 {
-            @apply mt-8;
-        }
-    }
-
-    section {
-        @apply pt-4;
-        @apply pb-12 lg:pb-[9rem];
-    }
-
-    a {
-        @apply text-primary-dark text-inherit hover:text-primary;
-    }
-
-    p .contact-modal,
-    p a {
-        @apply underline underline-offset-4 hover:text-primary;
-    }
-
-    .stack-logo {
-        --tw-brightness: brightness(0);
-        --tw-invert: invert(100%);
-        filter: var(--tw-filter);
-    }
-
-    .card {
-        @apply bg-dark-light p-4 rounded-lg;
-    }
-
-    .btn {
-        @apply inline-block px-4 py-3 rounded-lg no-underline;
-    }
-
-    .btn-sm {
-        @apply px-3 py-2 text-sm;
-    }
-
-    .btn-primary {
-        @apply bg-primary text-black hover:text-black;
-    }
-    
-    .content {
-        h1, h2, h3, h4 {
-            @apply text-primary;
-        }
-
-        ul li, ol li {
-            @apply mb-3;
-
-            strong {
-                @apply text-primary;
-            }
-        }
-    }
-
-    .process-item {
-        @apply relative z-10;
-
-        &:not(:last-child):after {
-            content: '';
-
-            @apply absolute w-full h-full lg:h-0 mt-10 left-7 lg:left-8 z-0 border-s-2 lg:border-b-2 border-dashed border-dark-light;
-        }
-
-        .icon {
-            z-index: 10;
-        }
-    }
-
+  }
 }

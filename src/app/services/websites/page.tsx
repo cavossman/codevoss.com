@@ -50,20 +50,20 @@ const WebsitesPage = () => {
             <h3>Benefits:</h3>
             <ul>
               <li>
-                <strong>Flexible:</strong> Customize your store with a wide
-                range of themes and plugins.
+                <strong className="text-primary">Flexible:</strong> Customize
+                your store with a wide range of themes and plugins.
               </li>
               <li>
-                <strong>Scalability:</strong> Grow your store with ease as your
-                business expands.
+                <strong className="text-primary">Scalability:</strong> Grow your
+                store with ease as your business expands.
               </li>
               <li>
-                <strong>SEO-Friendly:</strong> Benefit from WordPress&apos;s
-                powerful SEO capabilities.
+                <strong className="text-primary">SEO-Friendly:</strong> Benefit
+                from WordPress&apos;s powerful SEO capabilities.
               </li>
               <li>
-                <strong>Community Support:</strong> Access a large community of
-                developers and resources.
+                <strong className="text-primary">Community Support:</strong>{" "}
+                Access a large community of developers and resources.
               </li>
             </ul>
           </div>
@@ -85,19 +85,20 @@ const WebsitesPage = () => {
             <h3>Benefits:</h3>
             <ul>
               <li>
-                <strong>Ease of Use:</strong> Simple setup and management with
-                an intuitive interface.
+                <strong className="text-primary">Ease of Use:</strong> Simple
+                setup and management with an intuitive interface.
               </li>
               <li>
-                <strong>Security:</strong> Reliable and secure payment gateways.
+                <strong className="text-primary">Security:</strong> Reliable and
+                secure payment gateways.
               </li>
               <li>
-                <strong>Mobile-Friendly:</strong> Responsive designs that look
-                great on all devices.
+                <strong className="text-primary">Mobile-Friendly:</strong>{" "}
+                Responsive designs that look great on all devices.
               </li>
               <li>
-                <strong>App Integrations:</strong> Enhance your store with a
-                wide range of apps and tools.
+                <strong className="text-primary">App Integrations:</strong>{" "}
+                Enhance your store with a wide range of apps and tools.
               </li>
             </ul>
           </div>
