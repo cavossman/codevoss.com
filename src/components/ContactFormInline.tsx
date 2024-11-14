@@ -7,8 +7,9 @@ const ContactFormInline = () => {
         <div>
           <h2 className="text-primary">Contact Us</h2>
           <p>
-            Whether you're looking for a quote or just looking to talk over your
-            options, shoot us a message and we will get back to you promptly.
+            Whether you&apos;re looking for a quote or just looking to talk over
+            your options, shoot us a message and we will get back to you
+            promptly.
           </p>
         </div>
         <div className="bg-dark p-8 rounded-lg">

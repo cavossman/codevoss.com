@@ -1,5 +1,6 @@
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import { FC } from "react";
 
 const StackLogo: FC<{
@@ -7,7 +8,7 @@ const StackLogo: FC<{
 }> = ({ logo }) => {
   if (["mysql", "terraform"].includes(logo)) {
     return (
-      <img
+      <Image
         className="filter stack-logo w-12"
         src={`/images/logos/${logo}.svg`}
         alt={`${logo} logo`}
