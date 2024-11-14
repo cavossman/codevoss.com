@@ -41,7 +41,7 @@ const AboutPage = () => {
           insights and customer-centric approach ensure that CodeVoss not only
           meets but exceeds client expectations.
         </p>
-        {/* <h2 className="text-primary">What Drives Us</h2>
+        <h2 className="text-primary">What Drives Us</h2>
         <p>
           At CodeVoss, we believe in harnessing the latest technologies to solve
           complex challenges. Whether it&#39;s developing cutting-edge software
@@ -49,21 +49,13 @@ const AboutPage = () => {
           digital experiences, our team is dedicated to delivering solutions
           that exceed expectations.
         </p>
-        <h2 className="text-primary">Our Approach</h2>
-        <p>
-          We pride ourselves on our collaborative approach and commitment to
-          quality. From initial concept to final deployment, we work closely
-          with our clients to understand their unique needs and deliver
-          tailor-made solutions that drive success. Our agile methodology
-          ensures flexibility and efficiency at every stage of development.
-        </p>
         <h2 className="text-primary">Join Us on Our Journey</h2>
         <p>
           As we continue to grow, our commitment remains unwavering – to empower
           businesses through technology and innovation. Whether you are a
           startup with a bold vision or an established enterprise seeking
           digital transformation, CodeVoss is your trusted partner.
-        </p> */}
+        </p>
       </section>
       <OurProcess />
       <section className="container content">

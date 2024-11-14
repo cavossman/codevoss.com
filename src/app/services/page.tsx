@@ -58,10 +58,9 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="flex col-span items-center justify-center">
-          <FontAwesomeIcon
-            className="hidden lg:block w-24"
-            icon={faHandHoldingDollar}
-          />
+          <div className="hidden lg:flex items-center w-32 h-32 border-8 border-dark-light rounded-full p-6">
+            <FontAwesomeIcon icon={faHandHoldingDollar} />
+          </div>
         </div>
       </section>
       <section className="container grid lg:grid-cols-4">
@@ -88,10 +87,9 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="flex col-span items-center justify-center">
-          <FontAwesomeIcon
-            className="hidden lg:block w-24"
-            icon={faProjectDiagram}
-          />
+          <div className="hidden lg:flex items-center w-32 h-32 border-8 border-dark-light rounded-full p-6">
+            <FontAwesomeIcon icon={faProjectDiagram} />
+          </div>
         </div>
       </section>
       <section className="container grid lg:grid-cols-4">
@@ -126,7 +124,9 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="flex col-span items-center justify-center">
-          <FontAwesomeIcon className="hidden lg:block w-24" icon={faServer} />
+          <div className="hidden lg:flex items-center w-32 h-32 border-8 border-dark-light rounded-full p-6">
+            <FontAwesomeIcon icon={faServer} />
+          </div>
         </div>
       </section>
       {/* <section className="container">
