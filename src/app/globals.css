@@ -94,7 +94,7 @@
     &:not(:last-child):after {
       content: "";
 
-      @apply absolute w-full h-full lg:h-0 mt-10 left-7 lg:left-8 z-0 border-s-2 lg:border-b-2 border-dashed border-dark-light;
+      @apply absolute lg:w-full h-full lg:h-0 mt-10 left-7 lg:left-8 z-0 border-s-2 lg:border-b-2 border-dashed border-dark-light;
     }
 
     .icon {
